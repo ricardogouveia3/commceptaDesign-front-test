@@ -1,0 +1,94 @@
+.main {
+  background-color: #D8D9DA;
+  min-height: calc(100vh - 100px);
+  width: 100%;
+  padding: 30px 0;
+}
+
+.main__clicked-person,
+.main__persons__single {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 5px 10px rgba(#000000, .2);
+  overflow: hidden;
+  margin: 10px;
+  padding: 25px;
+  display: flex;
+}
+.main__persons__single--clicked {
+  color: #fff;
+  background-color: #0E2B4E;
+}
+.main__clicked-person__photo__img,
+.main__persons__single__photo__img {
+  border-radius: 300px;
+  width: 100px;
+  height: 100px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  object-fit: cover;
+  display: inline-block;
+  background-color: gray;
+}
+.main__clicked-person__info {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 0 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+.main__clicked-person__info__field {
+  display: inline-block;
+  margin: 5px 0;
+}
+.main__clicked-person__info__field__label {
+  text-transform: uppercase;
+  color: gray;
+  font-size: .9em;
+}
+.main__clicked-person__info__field__data {
+  font-weight: bold;
+}
+
+.main__persons {
+  margin-top: 30px;
+  width: 100%; 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.main__persons__single { cursor: pointer; }
+.main__persons__single__photo {
+  position: relative;
+  margin-right: 15px;
+}
+.main__persons__single__photo__id {
+  align-items: center;
+  background-color: #74D0D2;
+  border-radius: 300px;
+  color: #0E2B4E;
+  display: flex;
+  font-weight: bold;
+  height: 30px;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+}
+.main__persons__single__info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+.main__persons__single__info__field__name,
+.main__persons__single__info__field__role {
+  display: inline-block;
+  margin: 3px 0;
+}
+.main__persons__single__info__field__name { font-weight: bold; }
+.main__persons__single__info__field__role {
+  font-weight: 300;
+  font-size: .9em;
+}

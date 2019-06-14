@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before,
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  width: 100vw;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+}
+
+a { text-decoration: none; }
+
+.DEF-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

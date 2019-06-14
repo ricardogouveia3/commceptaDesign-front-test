@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+  <title>Teste front-end - Commcepta</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container DEF-container">
+      <a href="/" class="header__logo">
+        <img src="assets/img/logo.png" alt="Logo da space box" class="header__logo__img">
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav__list">
+          <li class="header__nav__list__item">
+            <a href="#" class="header__nav__list__item__link">Empresa</a>
+          </li>
+          <li class="header__nav__list__item">
+            <a href="#" class="header__nav__list__item__link">Serviço</a>
+          </li>
+          <li class="header__nav__list__item">
+            <a href="#" class="header__nav__list__item__link">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main-container DEF-container">
+
+      <div class="main__clicked-person">
+        <div class="main__clicked-person__photo">
+          <img id="clickedPhoto" src="" alt="" class="main__clicked-person__photo__img">
+        </div>
+        <ul class="main__clicked-person__info">
+          <li class="main__clicked-person__info__field">
+            <span id="clickedNameLabel" class="main__clicked-person__info__field__label">nome:</span>
+            <span id="clickedNameData" class="main__clicked-person__info__field__data"></span>
+          </li>
+          <li class="main__clicked-person__info__field">
+            <span id="clickedRoleLabel" class="main__clicked-person__info__field__label">cargo:</span>
+            <span id="clickedRoleData" class="main__clicked-person__info__field__data"></span>
+          </li>
+          <li class="main__clicked-person__info__field">
+            <span id="clickedAgeLabel" class="main__clicked-person__info__field__label">idade:</span>
+            <span id="clickedAgeData" class="main__clicked-person__info__field__data"></span>
+          </li>
+        </ul>
+      </div>
+
+      <div id="mainPersons" class="main__persons">
+      </div>
+
+    </div>
+  </main>
+  
+</body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<script src="js/index.min.js"></script>
+</html>
