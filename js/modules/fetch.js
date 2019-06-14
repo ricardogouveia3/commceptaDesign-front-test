@@ -7,13 +7,18 @@ fetch('../data/dados.json')
 
     persons = data;
 
-    clickedPerson(0);
     for (let person of persons) { buildCard(person); }
-
     allPeopleCards = document.querySelectorAll('.main__persons__single');
 
+    clickedPerson(1);
+    selectCard(1);
+
     for (let card of allPeopleCards) {
-      card.addEventListener("click", function(event){ console.log(event.target.dataset) });
+      card.addEventListener("click", function(event) {
+        event.stopPropagation();
+        selectCard(this.getAttribute('data-id'));
+        clickedPerson(this.getAttribute('data-id'));
+      });
     }
 
   });

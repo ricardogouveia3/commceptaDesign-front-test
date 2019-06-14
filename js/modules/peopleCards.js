@@ -14,14 +14,25 @@ function buildCard(person) {
     </div>
   `;
 
-  document.getElementById('mainPersons').innerHTML = document.getElementById('mainPersons').innerHTML + personCard;
+  document.getElementById('mainPersons').innerHTML += personCard;
 }
 
-
-
 function clickedPerson(id) {
-  document.getElementById('clickedPhoto').setAttribute('src', 'assets/img/people/' + persons[id].foto)
-  document.getElementById('clickedNameData').innerText = persons[id].nome;
-  document.getElementById('clickedRoleData').innerText = persons[id].cargo;
-  document.getElementById('clickedAgeData').innerText = persons[id].idade;
+  for (let person of persons) {
+    if (person.id == id) {
+      document.getElementById('clickedPhoto').setAttribute('src', 'assets/img/people/' + person.foto)
+      document.getElementById('clickedNameData').innerText = person.nome;
+      document.getElementById('clickedRoleData').innerText = person.cargo;
+      document.getElementById('clickedAgeData').innerText = person.idade;
+    }
+  }
+}
+
+function selectCard(id) {
+  for (let card of allPeopleCards) {
+    card.classList.remove('main__persons__single--clicked');
+    if (card.dataset.id == id) {
+      card.classList.add('main__persons__single--clicked');
+    }
+  }
 }
