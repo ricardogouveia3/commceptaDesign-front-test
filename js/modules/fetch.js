@@ -1,7 +1,7 @@
 let persons;
 let allPeopleCards;
 
-// fetch('https://raw.githubusercontent.com/ricardogouveia3/commceptaDesign-front-test/master/data/dados.json')   // Relative path
+// fetch('../data/dados.json')   // Relative path
 fetch('https://raw.githubusercontent.com/ricardogouveia3/commceptaDesign-front-test/master/data/dados.json')  // Absolute online path - required for github pages
 .then(function(response){
   response.json().then(function(data){
